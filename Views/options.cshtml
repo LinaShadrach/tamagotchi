@@ -1,0 +1,18 @@
+<h1>@Model.CurrentMessage</h1>
+<img src = '@Model.Image' alt ="@Model.Name"/>
+<ul>
+  <li>Hunger: @Model.Hunger</li>
+  <li>Energy: @Model.Energy</li>
+  <li>Happiness: @Model.Happiness</li>
+</ul>
+<form action="/feed/@Model.Id" method="post">
+  <button type="submit">Feed</button>
+</form>
+<form action="/play/@Model.Id" method="post">
+  <button type="submit">Play</button>
+</form>
+<form action="/rest/@Model.Id" method="post">
+  <button type="submit">Rest</button>
+</form>
+<p><a href="/create">Create another pet!</a></p>
+<p><a href="/pets">View all pets!</a></p>

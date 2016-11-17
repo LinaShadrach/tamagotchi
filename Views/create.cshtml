@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Tamagotchi!</title>
+  </head>
+  <body>
+    <form action='/pets' method='post'>
+      <div class="form-group">
+        <label for='name'>Name:</label>
+        <input id='name' name='name' type='text'>
+      </div>
+      <div class="form-group">
+        <label for='sprite'>Enter your sprite selection (1, 2, or 3):</label>
+        <input id='sprite' name='sprite' type='text'>
+      </div>
+      <div>
+        <img src="/Content/img/1.gif" alt="squirtle"/>
+        <p>
+          1
+        </p>
+      </div>
+      <div>
+        <img src="/Content/img/2.gif" alt="charmander"/>
+        <p>
+          2
+        </p>
+      </div>
+      <div>
+        <img src="/Content/img/3.gif" alt="bulbasaur"/>
+        <p>
+          3
+        </p>
+      </div>
+      <button type='submit'>Create</button>
+    </form>
+  </body>
+</html>
